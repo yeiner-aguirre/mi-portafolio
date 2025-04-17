@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { FaBook, FaPlane, FaFutbol, FaGamepad, FaCogs, FaMusic, FaBirthdayCake, FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
+import {
+  FaBook, FaPlane, FaFutbol, FaGamepad, FaCogs, FaMusic,
+  FaBirthdayCake, FaMapMarkerAlt, FaEnvelope, FaPhone
+} from 'react-icons/fa';
 
 const AboutMe = () => {
   const sectionRef = useRef(null);
@@ -46,12 +49,15 @@ const AboutMe = () => {
   ];
 
   return (
-    <section id="sobre-mi" className="py-20 bg-gradient-to-br from-gray-100 to-blue-50" ref={sectionRef}>
+    <section
+      id="sobre-mi"
+      className="py-20 bg-gradient-to-br from-[#767474] via-[#302f2f] to-[#1c1c1c] text-white"
+      ref={sectionRef}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
+        <h2 className="text-6xl sm:text-7xl font-extrabold text-center text-gray-200 mb-16 tracking-wide font-serif transition-all duration-500 ease-out hover:scale-105 hover:text-blue-400 opacity-0 translate-y-8 animate-fade-in">
           Sobre mí
         </h2>
-        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Profile Section */}
           <div className="lg:col-span-1">
@@ -64,10 +70,10 @@ const AboutMe = () => {
               />
             </div>
             <div className="mt-8 text-center">
-              <h3 className="text-3xl font-semibold text-gray-800">
+              <h3 className="text-3xl font-semibold text-white">
                 Yeiner Estiven Aguirre Quirama
               </h3>
-              <p className="text-xl font-medium text-blue-600 mt-2">
+              <p className="text-xl font-medium text-blue-400 mt-2">
                 Desarrollador Web Full-Stack
               </p>
             </div>
@@ -75,8 +81,8 @@ const AboutMe = () => {
 
           {/* About and Personal Info */}
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-white rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
-              <p className="text-lg text-gray-700 leading-relaxed">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl border border-white/10">
+              <p className="text-lg text-gray-200 leading-relaxed">
                 Soy un apasionado desarrollador web full-stack con un fuerte deseo de crear experiencias digitales
                 innovadoras y atractivas. Mi viaje en el mundo del desarrollo comenzó con una curiosidad insaciable
                 por entender cómo funcionan las cosas detrás de las pantallas que usamos todos los días. Me esfuerzo
@@ -88,15 +94,15 @@ const AboutMe = () => {
               {personalInfo.map((item) => (
                 <div
                   key={item.label}
-                  className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:bg-blue-50"
+                  className="bg-white/5 backdrop-blur-sm rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:bg-blue-900/10 border border-white/10"
                 >
                   <div className="flex items-center space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <item.icon className="text-2xl text-blue-600" />
+                    <div className="bg-blue-400/20 p-3 rounded-full">
+                      <item.icon className="text-2xl text-blue-300" />
                     </div>
                     <div>
-                      <h5 className="text-sm font-semibold text-gray-600">{item.label}</h5>
-                      <p className="text-base text-blue-700 font-medium break-words">{item.value}</p>
+                      <h5 className="text-sm font-semibold text-gray-300">{item.label}</h5>
+                      <p className="text-base text-blue-300 font-medium break-words">{item.value}</p>
                     </div>
                   </div>
                 </div>
@@ -107,17 +113,19 @@ const AboutMe = () => {
 
         {/* Interests Section */}
         <div className="mt-20">
-          <h4 className="text-3xl font-semibold text-gray-800 mb-10 text-center">Mis Intereses</h4>
+          <h4 className="text-3xl font-semibold text-white mb-10 text-center font-serif">
+            Mis Intereses
+          </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
             {interests.map((interest) => (
               <div
                 key={interest.name}
-                className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-50 flex flex-col items-center"
+                className="bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-900/10 flex flex-col items-center border border-white/10"
               >
-                <div className="bg-blue-100 p-4 rounded-full mb-4">
-                  <interest.icon className="text-3xl text-blue-600" />
+                <div className="bg-blue-400/20 p-4 rounded-full mb-4">
+                  <interest.icon className="text-3xl text-blue-300" />
                 </div>
-                <span className="text-base font-medium text-gray-700 text-center">{interest.name}</span>
+                <span className="text-base font-medium text-gray-200 text-center">{interest.name}</span>
               </div>
             ))}
           </div>

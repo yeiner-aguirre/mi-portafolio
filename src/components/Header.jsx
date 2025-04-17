@@ -238,7 +238,7 @@ const Header = () => {
               <FaBriefcase className="text-5xl text-gray-700 relative z-10 portfolio-icon" />
             </div>
             <a href="#" className="text-3xl md:text-4xl transition-all duration-700 transform hover:scale-105">
-              <span className="title-shimmer text-transparent">MI PORTAFOLIO</span>
+              <span className="title-shimmer text-transparent hidden md:inline-block">MI PORTAFOLIO</span>
             </a>
           </div>
           <nav className="hidden md:block">
