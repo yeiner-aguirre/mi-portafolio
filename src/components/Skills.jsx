@@ -97,7 +97,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="habilidades" className="py-20 bg-gradient-to-br from-purple-50 to-pink-100" ref={sectionRef}>
+    <section id="habilidades" className="py-20 bg-gradient-to-br from-zinc-200 via-gray-300 to-gray-400 shadow-inner" ref={sectionRef}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-bold text-center text-gray-800 mb-12 animate-pulse">
           Mis Habilidades
@@ -106,7 +106,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className="skill-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="skill-card bg-slate-100 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <div className="p-6 flex flex-col items-center">
                 <skill.icon className={`text-6xl ${skill.color} mb-4 animate-bounce`} />

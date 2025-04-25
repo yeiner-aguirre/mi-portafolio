@@ -51,7 +51,7 @@ const AboutMe = () => {
   return (
     <section
       id="sobre-mi"
-      className="py-20 bg-gradient-to-br from-[#767474] via-[#302f2f] to-[#1c1c1c] text-white"
+      className="py-20 bg-gradient-to-br from-[#464545] via-[#3c3b3b] to-[#3c3b3b] text-white"
       ref={sectionRef}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">

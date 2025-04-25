@@ -5,6 +5,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppContact from './components/WhatsAppContact';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
+        <WhatsAppContact phoneNumber="573147630741" />
       </main>
     </div>
   );
