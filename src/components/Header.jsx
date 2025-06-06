@@ -24,7 +24,7 @@ const Header = () => {
     { name: "Habilidades", href: "#habilidades" },
     { name: "Proyectos", href: "#proyectos" },
     { name: "Contacto", href: "#contacto" },
-    { name: "Descargar CV", href: "/images/Cv yeiner Aguirre.pdf", download: true },
+    { name: "Descargar CV", href: "/images/Cv yeiner quirama.pdf", download: true },
   ]
 
   // Estilo consistente del encabezado con un gradiente más sofisticado

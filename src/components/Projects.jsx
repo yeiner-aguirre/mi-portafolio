@@ -9,11 +9,11 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "BLOG-POLI",
-      description: "Aplicacion web creada en la cual te puedes registrar, adquirir un usuario e interactuar con post interesantes de otros usuarios y crear los tuyos sobre tus temas de interes favoritos.",
-      image: "/images/blog.png?height=400&width=600",
-      github: "https://github.com/yeiner-aguirre/blog-poli.git",
-      live: "http://elpoli-blog.wuaze.com/?i=1"
+      title: "APP del tiempo",
+      description: "Aplicación que utiliza tu ubicación para proporcionar información sobre el clima y las condiciones meteorológicas.",
+      image: "/images/tiempo.png?height=1000&width=1000",
+      github: "https://github.com/yeiner-aguirre/aplicacion-clima.git",
+      live: "https://app-del-tiempo.onrender.com"
     },
     {
       title: "RICK AND MORTY",
@@ -37,11 +37,11 @@ const Projects = () => {
       live: "https://chat-bot-yeiner.vercel.app/"
     },
     {
-      title: "APP del tiempo",
-      description: "Aplicación que utiliza tu ubicación para proporcionar información sobre el clima y las condiciones meteorológicas.",
-      image: "/images/tiempo.png?height=1000&width=1000",
-      github: "https://github.com/yeiner-aguirre/aplicacion-clima.git",
-      live: "https://app-del-tiempo.onrender.com"
+      title: "BLOG-POLI",
+      description: "Aplicacion web creada en la cual te puedes registrar, adquirir un usuario e interactuar con post interesantes de otros usuarios y crear los tuyos sobre tus temas de interes favoritos.",
+      image: "/images/blog.png?height=400&width=600",
+      github: "https://github.com/yeiner-aguirre/blog-poli.git",
+      live: "http://elpoli-blog.wuaze.com/?i=1"
     }
   ];
 
