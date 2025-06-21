@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppContact from './components/WhatsAppContact';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         <Footer />
         <WhatsAppContact phoneNumber="573147630741" />
       </main>
+      <Analytics />
+      {/* Aquí puedes añadir más componentes o secciones según sea necesario */}
     </div>
   );
 }
